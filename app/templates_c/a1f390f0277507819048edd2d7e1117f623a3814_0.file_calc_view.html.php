@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.5.1, created on 2026-03-20 07:42:44
+/* Smarty version 5.5.1, created on 2026-03-24 20:54:28
   from 'file:C:\xampp\htdocs\kalkulator_oprocentowania/app/calc_view.html' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.5.1',
-  'unifunc' => 'content_69bcec6404a658_45951985',
+  'unifunc' => 'content_69c2ebf42e59e1_24873020',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a1f390f0277507819048edd2d7e1117f623a3814' => 
     array (
       0 => 'C:\\xampp\\htdocs\\kalkulator_oprocentowania/app/calc_view.html',
-      1 => 1773988961,
+      1 => 1774114571,
       2 => 'file',
     ),
   ),
@@ -20,18 +20,18 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_69bcec6404a658_45951985 (\Smarty\Template $_smarty_tpl) {
+function content_69c2ebf42e59e1_24873020 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\kalkulator_oprocentowania\\app';
 $_smarty_tpl->getInheritance()->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_182367878769bcec64030e16_82540737', 'content');
+$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_86857768369c2ebf42d09e8_14902303', 'content');
 $_smarty_tpl->getInheritance()->endChild($_smarty_tpl, "main.html", $_smarty_current_dir);
 }
 /* {block 'content'} */
-class Block_182367878769bcec64030e16_82540737 extends \Smarty\Runtime\Block
+class Block_86857768369c2ebf42d09e8_14902303 extends \Smarty\Runtime\Block
 {
 public function callBlock(\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\kalkulator_oprocentowania\\app';
@@ -47,13 +47,13 @@ $_smarty_current_dir = 'C:\\xampp\\htdocs\\kalkulator_oprocentowania\\app';
         <div class="col-12">
             <label for="id_kwota">Kwota kredytu (PLN)</label>
             <input type="text" name="kwota" id="id_kwota" value="<?php echo $_smarty_tpl->getValue('form')['kwota'];?>
-" />
+" " placeholder="np. 50000"/>
         </div>
         
         <div class="col-6">
             <label for="id_oprocentowanie">Oprocentowanie (%)</label>
             <input type="text" name="oprocentowanie" id="id_oprocentowanie" list="oprocentowanie_lista" value="<?php echo $_smarty_tpl->getValue('form')['oprocentowanie'];?>
-" />
+" " placeholder="np. 7.5"/>
             <datalist id="oprocentowanie_lista">
                 <option value="3"><option value="5"><option value="7"><option value="10">
             </datalist>
@@ -62,7 +62,7 @@ $_smarty_current_dir = 'C:\\xampp\\htdocs\\kalkulator_oprocentowania\\app';
         <div class="col-6">
             <label for="id_lata">Liczba lat</label>
             <input type="text" name="lata" id="id_lata" value="<?php echo $_smarty_tpl->getValue('form')['lata'];?>
-" />
+" " placeholder="np. 5" />
         </div>
 
         <div class="col-12">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.5.1, created on 2026-03-20 07:38:24
+/* Smarty version 5.5.1, created on 2026-03-24 20:54:28
   from 'file:main.html' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.5.1',
-  'unifunc' => 'content_69bceb60b413d2_66795558',
+  'unifunc' => 'content_69c2ebf43efd01_06677581',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd27eaa539c659a45dc965b55046aa946f3b1be07' => 
     array (
       0 => 'main.html',
-      1 => 1773988348,
+      1 => 1774382060,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_69bceb60b413d2_66795558 (\Smarty\Template $_smarty_tpl) {
+function content_69c2ebf43efd01_06677581 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\kalkulator_oprocentowania\\templates';
 $_smarty_tpl->getInheritance()->init($_smarty_tpl, false);
 ?>
@@ -37,9 +37,8 @@ $_smarty_tpl->getInheritance()->init($_smarty_tpl, false);
 </head>
 <body class="is-preload">
     <div id="wrapper">
-        
-                <?php 
-$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_84328680969bceb60b3e739_69934815', 'intro');
+        <?php 
+$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_166492425769c2ebf43ec325_97618465', 'intro');
 ?>
 
 
@@ -47,7 +46,7 @@ $_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_84328680969bc
             <div class="inner">
                 <section id="app_content">
                     <?php 
-$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_167656104969bceb60b40408_90298021', 'content');
+$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_70839730469c2ebf43edfe2_89456880', 'content');
 ?>
 
                 </section>
@@ -55,14 +54,21 @@ $_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_167656104969b
         </div>
 
         <footer id="footer">
-            <div class="inner">
-                <ul class="copyright">
-                    <li>Kalkulator Kredytowy</li>
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <div class="inner">
+        <?php if (!(true && ($_smarty_tpl->hasVariable('result') && null !== ($_smarty_tpl->getValue('result') ?? null))) && (!(true && ($_smarty_tpl->hasVariable('messages') && null !== ($_smarty_tpl->getValue('messages') ?? null))) || $_smarty_tpl->getSmarty()->getModifierCallback('count')($_smarty_tpl->getValue('messages')) == 0)) {?>
+            <section style="text-align: center;">
+                <ul class="actions">
+                    <li><a href="#header" class="button small">Wróć na górę</a></li>
                 </ul>
-            </div>
-        </footer>
+            </section>
+        <?php }?>
+
+        <ul class="copyright">
+            <li>Kalkulator Kredytowy</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
     </div>
+</footer>
 
     <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->getValue('app_url');?>
@@ -75,7 +81,7 @@ $_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_167656104969b
 </body>
 </html><?php }
 /* {block 'intro'} */
-class Block_84328680969bceb60b3e739_69934815 extends \Smarty\Runtime\Block
+class Block_166492425769c2ebf43ec325_97618465 extends \Smarty\Runtime\Block
 {
 public function callBlock(\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\kalkulator_oprocentowania\\templates';
@@ -104,7 +110,7 @@ $_smarty_current_dir = 'C:\\xampp\\htdocs\\kalkulator_oprocentowania\\templates'
 }
 /* {/block 'intro'} */
 /* {block 'content'} */
-class Block_167656104969bceb60b40408_90298021 extends \Smarty\Runtime\Block
+class Block_70839730469c2ebf43edfe2_89456880 extends \Smarty\Runtime\Block
 {
 public function callBlock(\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\kalkulator_oprocentowania\\templates';

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.5.1, created on 2026-03-21 18:36:17
+/* Smarty version 5.5.1, created on 2026-03-24 20:54:01
   from 'file:C:\xampp\htdocs\kalkulator_oprocentowania/app/calc_view.html' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.5.1',
-  'unifunc' => 'content_69bed7114ddd51_52021437',
+  'unifunc' => 'content_69c2ebd95a1ff2_73613710',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,18 +20,18 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_69bed7114ddd51_52021437 (\Smarty\Template $_smarty_tpl) {
+function content_69c2ebd95a1ff2_73613710 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\kalkulator_oprocentowania\\app';
 $_smarty_tpl->getInheritance()->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_161452907969bed7112f0e62_41550772', 'content');
+$_smarty_tpl->getInheritance()->instanceBlock($_smarty_tpl, 'Block_68130287569c2ebd9418dc0_68866075', 'content');
 $_smarty_tpl->getInheritance()->endChild($_smarty_tpl, "main.html", $_smarty_current_dir);
 }
 /* {block 'content'} */
-class Block_161452907969bed7112f0e62_41550772 extends \Smarty\Runtime\Block
+class Block_68130287569c2ebd9418dc0_68866075 extends \Smarty\Runtime\Block
 {
 public function callBlock(\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\kalkulator_oprocentowania\\app';

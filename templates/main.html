@@ -9,8 +9,6 @@
 </head>
 <body class="is-preload">
     <div id="wrapper">
-        
-        {* Sekcja nagłówka (Header/Intro) *}
         {block name=intro}
             {if !isset($result) && count($messages) == 0}
                 <header id="header" style="height: 100vh; display: flex; flex-direction: column; justify-content: center; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{$app_url}/images/pic16.jpg'); background-size: cover; background-position: center; color: white; padding: 2em;">
@@ -40,14 +38,21 @@
         </div>
 
         <footer id="footer">
-            <div class="inner">
-                <ul class="copyright">
-                    <li>Kalkulator Kredytowy</li>
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <div class="inner">
+        {if !isset($result) && (!isset($messages) || $messages|@count == 0)}
+            <section style="text-align: center;">
+                <ul class="actions">
+                    <li><a href="#header" class="button small">Wróć na górę</a></li>
                 </ul>
-            </div>
-        </footer>
+            </section>
+        {/if}
+
+        <ul class="copyright">
+            <li>Kalkulator Kredytowy</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
     </div>
+</footer>
 
     <script src="{$app_url}/assets/js/jquery.min.js"></script>
     <script src="{$app_url}/assets/js/main.js"></script>

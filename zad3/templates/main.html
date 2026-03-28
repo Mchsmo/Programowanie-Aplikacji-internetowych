@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>{$page_title|default:"Kalkulator Kredytowy"}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{$app_url}/assets/css/main.css" />
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        {block name=intro}
+            {if !isset($result) && count($messages) == 0}
+                <header id="header" style="height: 100vh; display: flex; flex-direction: column; justify-content: center; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{$app_url}/images/pic16.jpg'); background-size: cover; background-position: center; color: white; padding: 2em;">
+                    <div class="inner">
+                        <a href="{$app_url}" class="logo">
+                            <span class="symbol"><img src="{$app_url}/images/logo.svg" alt="" /></span>
+                            <span class="title">Kalkulator Kredytowy</span>
+                        </a>
+                        <div style="margin-top: 2em;">
+                            <ul class="actions">
+                                <li><a href="#app_content" class="button primary">Zacznij liczyć</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            {/if}
+        {/block}
+
+        <div id="main">
+            <div class="inner">
+                <section id="app_content">
+                    {block name=content} 
+                        {* Tu wejdzie zawartość z calc_view.html *} 
+                    {/block}
+                </section>
+            </div>
+        </div>
+
+        <footer id="footer">
+    <div class="inner">
+        {if !isset($result) && (!isset($messages) || $messages|@count == 0)}
+            <section style="text-align: center;">
+                <ul class="actions">
+                    <li><a href="#header" class="button small">Wróć na górę</a></li>
+                </ul>
+            </section>
+        {/if}
+
+        <ul class="copyright">
+            <li>Kalkulator Kredytowy</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</footer>
+
+    <script src="{$app_url}/assets/js/jquery.min.js"></script>
+    <script src="{$app_url}/assets/js/main.js"></script>
+</body>
+</html>
